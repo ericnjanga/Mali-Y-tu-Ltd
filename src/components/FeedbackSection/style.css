@@ -1,0 +1,38 @@
+
+
+
+
+.feedbackSection {
+  bottom: 50px;
+  right: 50px;
+  position: fixed;
+  z-index: 10;
+}
+.feedbackSection__f {
+  position: relative; padding: 10px; min-width: 250px; min-height: 250px; width: auto; height: auto; margin-left: 25px; border-radius: 50% 50% 50% 10%; display: flex; flex-direction: column; background-color: rgb(189, 8, 28);
+}
+.feedbackSection__f1 {
+  position: absolute; left: 0px; bottom: 0px; padding: 25px; text-align: left;
+}
+/* .feedbackSection__f2 button {
+  border: 1px solid rgb(255, 255, 255); height: auto; display: inline-block; border-radius: 4px; -webkit-font-smoothing: antialiased; padding: 8px 18px; font-size: 15px; font-weight: bold; outline: none; box-shadow: none; cursor: pointer; margin-top: 10px; vertical-align: middle; text-align: center; background-color: transparent; color: rgb(255, 255, 255);
+} */
+
+
+/* 
+@media (min-width: 768px) {
+  .mainFooter {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .mainFooter {
+    margin-top: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .mainFooter {
+    margin-top: 100px;
+  }
+} */
