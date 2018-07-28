@@ -18,21 +18,3 @@
   border: 1px solid rgb(255, 255, 255); height: auto; display: inline-block; border-radius: 4px; -webkit-font-smoothing: antialiased; padding: 8px 18px; font-size: 15px; font-weight: bold; outline: none; box-shadow: none; cursor: pointer; margin-top: 10px; vertical-align: middle; text-align: center; background-color: transparent; color: rgb(255, 255, 255);
 } */
 
-
-/* 
-@media (min-width: 768px) {
-  .mainFooter {
-    margin-top: 30px;
-  }
-}
-
-@media (min-width: 992px) {
-  .mainFooter {
-    margin-top: 60px;
-  }
-}
-@media (min-width: 1200px) {
-  .mainFooter {
-    margin-top: 100px;
-  }
-} */

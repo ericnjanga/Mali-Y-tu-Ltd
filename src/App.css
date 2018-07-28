@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Antic+Didone');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 
-.App {
-  text-align: center;
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 .App-logo {
@@ -39,26 +41,26 @@
  * Container width
  * ------------------
 */
-.container {
+/* .container {
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 768px) {
   .container {
-      width: 750px;
+    width: 750px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-      width: 970px;
+    width: 970px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-      width: 1170px;
+    width: 1170px;
   }
-}
+} */
 
 
 
@@ -71,12 +73,100 @@
  * ------------------
 */
 h1, h2, h3, h4 {
-  font-family: 'Antic Didone', serif;
+  margin-top: 0;
+  margin-bottom: 0;
   text-transform: uppercase;
-  font-weight: 400;
-  font-style: italic;
-}
-.fs1 {
-  font-size: 80px;
+  /* font-weight: 300; */
+} 
+/* .fs4 {
+  font-size: 20px;
+  line-height: 30px;
+}  */
+p {
+  margin-top: 0;
 }
 
+
+
+
+
+
+
+/**
+ * Panels opoosite
+ * ------------------
+*/
+.panels-opposite .panel-left,
+.panels-opposite .panel-right {
+  align-items: center;
+  text-align: center;
+}
+.panels-opposite .panel-left,
+.panels-opposite .panel-right {
+  padding-right: 40px!important;
+  padding-left: 40px!important;
+}
+.panels-opposite .panel-left,
+.panels-opposite .panel-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+@media (min-width: 600px) {
+  .panels-opposite .panel-left,
+  .panels-opposite .panel-right {
+    min-height: 300px;
+  }
+  .panels-opposite .panel-left {
+    align-items: flex-end;
+    text-align: right;
+  }
+  .panels-opposite .panel-right {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+}
+
+
+
+
+
+
+
+/**
+ * Components
+ * ------------------
+*/
+.tmb {
+  max-width: 100%;
+}
+
+
+
+
+
+
+
+/**
+ * Container width
+ * ------------------
+*/
+/* .sectionContainer {
+  margin-top: 0!important;
+  margin-bottom: 0!important;
+  padding: 50px 0px;
+  border: 2px solid purple;
+}
+.sectionContainer-top {
+  margin-top: 50px!important;
+  margin-bottom: 0!important;
+  border-top: 2px solid purple;
+}
+.sectionContainer-bottom {
+  margin-top: 0!important;
+  margin-bottom: 50px!important;
+  border-bottom: 2px solid purple;
+} */

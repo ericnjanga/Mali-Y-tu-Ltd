@@ -1,0 +1,49 @@
+
+
+.parallax-container {
+  height: 300px;
+  /* border: 3px solid lime; */
+}
+.parallax-container__img {
+  max-width: 799px;
+} 
+
+@media (min-width: 768px) {
+  .parallax-container {
+    height: 400px;
+  }  
+  .parallax-container__img {
+    max-width: 1000px;
+  }  
+}
+
+@media (min-width: 992px) {
+  .parallax-container {
+    height: 450px;
+  }  
+  .parallax-container__img {
+    max-width: 1300px;
+  } 
+}
+@media (min-width: 1200px) {
+  .parallax-container {
+    height: 550px;
+  }
+  .parallax-container__img {
+    max-width: 1600px;
+  } 
+}
+@media (min-width: 1500px) {
+  .parallax-container {
+    height: 650px;
+  }
+  .parallax-container__img {
+    max-width: 2000px;
+  } 
+}
+@media (min-width: 1800px) {
+  .parallax-container__img {
+    max-width: 2300px;
+  } 
+}
+

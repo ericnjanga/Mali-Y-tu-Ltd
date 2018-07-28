@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
+import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import './style.css';
 
@@ -11,7 +11,11 @@ import './style.css';
  * UI structure to be rendered
  */
 
-const DonationSectionPresentation = ({ spacing, style }) => {
+const DonationSectionPresentation = ({
+  classes,
+  spacing,
+  style,
+}) => {
 
   const sp = {
     background: '#ccc',
@@ -19,44 +23,77 @@ const DonationSectionPresentation = ({ spacing, style }) => {
     width: '100%',
   };
 
-  console.log('*****spacing=', Number(spacing));
 
   return (
-    <section className="mainFooter" style={style.container}>
-      <div className="container">
+    <section className={classes.root}>
+      <div className={classes.container}>
         <Grid
           container
-          className="container"
+          justify="center"
           spacing={Number(spacing)}
-          
+          className="panels-opposite"
         >
-          <Grid item xs={12}>
-            <Grid
-              container
-              justify="center"
-              spacing={Number(spacing)}
+          <Grid
+            className="panel-left"
+            item
+            xs={12}
+            sm={6}
+          >
+            <h2
+              style={style.section1.text}
+              className={classes.compTitle}
             >
-              <Grid item xs={12} sm={6}>
-                <h3 className="fs1" style={style.section1.text}>
-                  Help us
-                </h3>
-              </Grid>
-              
-              <Grid item xs={12} sm={6}>
-                <p>Soufflé icing ice cream. Cookie cake cupcake bonbon. Icing marshmallow tart. Chocolate bar cotton candy gummies tootsie roll.</p>
-                <Button variant="contained" color="secondary">
-                  Contact Us
-                </Button>
-              </Grid>
-            
-            </Grid>
+              Help us
+            </h2>
           </Grid>
+          
+          <Grid
+            className="panel-right"
+            item
+            xs={12}
+            sm={6}
+          >
+            <p className="fs4">Soufflé icing ice cream. Cookie cake cupcake bonbon. Icing marshmallow tart. Chocolate bar cotton candy gummies tootsie roll.</p>
+            <Button variant="contained" color="secondary">
+              Contact Us
+            </Button>
+          </Grid>
+        
         </Grid>
       </div>
     </section>
   );
 
 };
+
+
+const styles = theme => ({
+  root: {
+    flexGrow: 1,
+    padding: '60px 0',
+    border: '3px solid red',
+  },
+  container: {
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    [theme.breakpoints.up('sm')]: {
+      maxWidth: '750px',
+    },
+    [theme.breakpoints.up('md')]: {
+      maxWidth: '970px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      maxWidth: '1170px',
+    },
+  },
+  compTitle: {
+    fontWeight: '300',
+    fontSize: '5rem',
+    fontStyle: 'italic',
+    fontFamily: "'Antic Didone', serif",
+  },
+});
+
 
 /**
  * Component props validation
@@ -70,11 +107,11 @@ DonationSectionPresentation.propTypes = {
  * Component props default values
  */
 DonationSectionPresentation.defaultProps = {
-  spacing: '32',
+  spacing: '40',
   style: { // Default styles
     container: {
       // backgroundColor: '#2F2E2E',
-      padding: '40px 0',
+      // padding: '60px 0',
     },
     section1: {
       text: {
@@ -85,8 +122,9 @@ DonationSectionPresentation.defaultProps = {
       text: {
         color: '#A0A09F',
       },
-    }
+    },
   },
 };
 
-export default DonationSectionPresentation;
+
+export default withStyles(styles)(DonationSectionPresentation);

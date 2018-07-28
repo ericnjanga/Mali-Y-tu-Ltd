@@ -45,7 +45,7 @@ FeedbackSectionPresentation.propTypes = {
  * Component props default values
  */
 FeedbackSectionPresentation.defaultProps = {
-  spacing: '32',
+  spacing: '40',
   style: { // Default styles
     container: {
     },

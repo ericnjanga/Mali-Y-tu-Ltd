@@ -6,7 +6,7 @@ import './HeroPresentation.css';
 const HeroPresentation = ({ container, style }) => {
 
   return (
-    <header className="hero" style={style.container}>
+    <header className="hero sectionContainer-bottom" style={style.container}>
       <div>
         <h1 className="hero-title">Les meilleures voitures</h1>
         <p>*******Chocolate bar apple pie lollipop brownie carrot cake halvah chocolate bar. Toffee candy tiramisu gummi bears. Halvah cake cheesecake. Chocolate bar apple pie lollipop brownie carrot cake halvah chocolate bar. </p>
